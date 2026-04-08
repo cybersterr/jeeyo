@@ -1,0 +1,17 @@
+{
+  "name": "stream-json-fetcher",
+  "version": "1.0.0",
+  "description": "Fetch and transform JioTV stream JSON",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "",
+  "license": "MIT"
+}
