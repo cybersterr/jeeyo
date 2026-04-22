@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://zio.vodep39240327.workers.dev";
+const STREAM_URL = "https://netx.streamstar18.workers.dev/zio1";
 const OUTPUT_FILE = "stream.json";
 
 async function fetchAndSaveJson() {
