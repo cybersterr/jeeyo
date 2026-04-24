@@ -24,7 +24,7 @@ async function fetchAndSaveJson() {
 
       // Extract info from #EXTINF
       if (trimmed.startsWith("#EXTINF:")) {
-        const tvgIdMatch = trimmed.match(/tvg-id="(\d+)"/);
+        const tvgIdMatch = trimmed.match(/tvg-id="([^"]+)"/);
         const groupMatch = trimmed.match(/group-title="([^"]+)"/);
         const logoMatch = trimmed.match(/tvg-logo="([^"]+)"/);
         const channelMatch = trimmed.match(/,(.*)$/);
@@ -37,9 +37,16 @@ async function fetchAndSaveJson() {
 
       // Extract kid and key
       else if (trimmed.startsWith("#KODIPROP:inputstream.adaptive.license_key=")) {
-        const [kid, key] = trimmed.split("=")[1].split(":");
-        currentKid = kid;
-        currentKey = key;
+        const value = trimmed.split("=")[1];
+
+        if (value.includes(":")) {
+          const [kid, key] = value.split(":");
+          currentKid = kid;
+          currentKey = key;
+        } else {
+          currentKid = null;
+          currentKey = value;
+        }
       }
 
       // Extract user-agent
@@ -48,7 +55,7 @@ async function fetchAndSaveJson() {
       }
 
       // Extract URL after license
-      else if (currentKid && currentKey && currentTvgId && trimmed.startsWith("http")) {
+      else if (currentKey && trimmed.startsWith("http")) {
 
         // ❌ SKIP THE FIRST ENTRY (sf-top)
         if (currentTvgId === "sf-top") {
@@ -69,7 +76,7 @@ async function fetchAndSaveJson() {
         cleanUrl = cleanUrl.replace("jiotvbpkmob.cdn.jio.com", "jiotvbpkmob.cdn.jio.com");
         // --- MODIFICATION END ---
 
-        result[currentTvgId] = {
+        result[currentTvgId || currentChannel] = {
           kid: currentKid,
           key: currentKey,
           url: cleanUrl,
