@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://jtvv.droozy.workers.dev/";
+const STREAM_URL = "https://jiotvv.droozy.workers.dev/";
 const OUTPUT_FILE = "stream.json";
 const EPG_URL = "https://avkb.short.gy/jioepg.xml.gz";
 
