@@ -1,15 +1,22 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://raw.githubusercontent.com/alex4528y/m3u/main/jstar.m3u";
+const STREAM_URL = "https://jtvv.droozy.workers.dev/";
 const OUTPUT_FILE = "stream.json";
+const EPG_URL = "https://avkb.short.gy/jioepg.xml.gz";
 
 async function fetchAndSaveJson() {
   try {
     const response = await axios.get(STREAM_URL, { responseType: "text" });
     const lines = response.data.split("\n");
 
-    const result = {};
+    const result = {
+      playlist_info: {
+        extm3u: true,
+        url_tvg: EPG_URL
+      },
+      channels: {}
+    };
 
     let currentKid = null;
     let currentKey = null;
@@ -22,6 +29,11 @@ async function fetchAndSaveJson() {
     for (const line of lines) {
       const trimmed = line.trim();
 
+      // Skip #EXTM3U line
+      if (trimmed.startsWith("#EXTM3U")) {
+        continue;
+      }
+
       // Extract info from #EXTINF
       if (trimmed.startsWith("#EXTINF:")) {
         const tvgIdMatch = trimmed.match(/tvg-id="([^"]+)"/);
@@ -32,11 +44,15 @@ async function fetchAndSaveJson() {
         currentTvgId = tvgIdMatch ? tvgIdMatch[1] : null;
         currentGroup = groupMatch ? groupMatch[1] : null;
         currentLogo = logoMatch ? logoMatch[1] : null;
-        currentChannel = channelMatch ? channelMatch[1] : null;
+        currentChannel = channelMatch ? channelMatch[1].trim() : null;
       }
 
-      // Extract kid and key
-      else if (trimmed.startsWith("#KODIPROP:inputstream.adaptive.license_key=")) {
+      // Extract clearkey
+      else if (
+        trimmed.startsWith(
+          "#KODIPROP:inputstream.adaptive.license_key="
+        )
+      ) {
         const value = trimmed.split("=")[1];
 
         if (value.includes(":")) {
@@ -54,10 +70,8 @@ async function fetchAndSaveJson() {
         currentUserAgent = trimmed.split("=")[1];
       }
 
-      // Extract URL after license
-      else if (currentKey && trimmed.startsWith("http")) {
-
-        // ❌ SKIP THE FIRST ENTRY (sf-top)
+      // Extract stream URL
+      else if (trimmed.startsWith("http")) {
         if (currentTvgId === "sf-top") {
           currentKid = null;
           currentKey = null;
@@ -69,24 +83,21 @@ async function fetchAndSaveJson() {
           continue;
         }
 
-        // Remove extra &xxx=... if present
         let cleanUrl = trimmed.split("&xxx=")[0];
 
-        // --- MODIFICATION START ---
-        cleanUrl = cleanUrl.replace("jiotvbpkmob.cdn.jio.com", "jiotvbpkmob.cdn.jio.com");
-        // --- MODIFICATION END ---
-
-        result[currentTvgId || currentChannel] = {
+        result.channels[currentTvgId || currentChannel] = {
+          tvg_id: currentTvgId,
+          channel_name: currentChannel,
+          tvg_logo: currentLogo,
+          group_title: currentGroup,
+          license_type: "clearkey",
           kid: currentKid,
           key: currentKey,
           url: cleanUrl,
-          group_title: currentGroup,
-          tvg_logo: currentLogo,
-          channel_name: currentChannel,
           user_agent: currentUserAgent
         };
 
-        // Reset for next entry
+        // Reset values
         currentKid = null;
         currentKey = null;
         currentTvgId = null;
@@ -97,9 +108,13 @@ async function fetchAndSaveJson() {
       }
     }
 
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2), "utf-8");
-    console.log("✅ stream.json saved successfully.");
+    fs.writeFileSync(
+      OUTPUT_FILE,
+      JSON.stringify(result, null, 2),
+      "utf-8"
+    );
 
+    console.log("✅ stream.json saved successfully.");
   } catch (err) {
     console.error("❌ Failed to fetch M3U:", err.message);
     process.exit(1);
