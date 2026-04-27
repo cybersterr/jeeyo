@@ -1,7 +1,6 @@
 const axios = require("axios");
 const fs = require("fs");
 
-// 🔒 Read stream URL from GitHub Secrets / Environment Variable
 const STREAM_URL = process.env.STREAM_URL;
 
 const OUTPUT_FILE = "stream.json";
