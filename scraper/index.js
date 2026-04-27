@@ -1,12 +1,18 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://jiotvv.droozy.workers.dev/";
+// 🔒 Read stream URL from GitHub Secrets / Environment Variable
+const STREAM_URL = process.env.STREAM_URL;
+
 const OUTPUT_FILE = "stream.json";
 const EPG_URL = "https://avkb.short.gy/jioepg.xml.gz";
 
 async function fetchAndSaveJson() {
   try {
+    if (!STREAM_URL) {
+      throw new Error("STREAM_URL secret not found.");
+    }
+
     const response = await axios.get(STREAM_URL, { responseType: "text" });
     const lines = response.data.split("\n");
 
