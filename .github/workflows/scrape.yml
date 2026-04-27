@@ -2,7 +2,7 @@ name: Fetch and Update Stream JSON
 
 on:
   schedule:
-    - cron: "*/10 * * * *" # Every 10 minutes
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -28,6 +28,8 @@ jobs:
           npm install
 
       - name: Run fetch script
+        env:
+          STREAM_URL: ${{ secrets.STREAM_URL }}
         run: |
           cd scraper
           npm start
