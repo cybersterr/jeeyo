@@ -1,7 +1,6 @@
 {
   "playlist_info": {
-    "extm3u": true,
-    "url_tvg": "https://avkb.short.gy/jioepg.xml.gz"
+    "extm3u": true
   },
   "channels": {
     "143": {
