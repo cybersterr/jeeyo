@@ -15,9 +15,6 @@ async function fetchAndSaveJson() {
     const lines = response.data.split("\n");
 
     const result = {
-      playlist_info: {
-        extm3u: true
-      },
       channels: {}
     };
 
