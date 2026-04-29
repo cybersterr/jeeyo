@@ -4,7 +4,6 @@ const fs = require("fs");
 const STREAM_URL = process.env.STREAM_URL;
 
 const OUTPUT_FILE = "stream.json";
-const EPG_URL = "https://avkb.short.gy/jioepg.xml.gz";
 
 async function fetchAndSaveJson() {
   try {
@@ -17,8 +16,7 @@ async function fetchAndSaveJson() {
 
     const result = {
       playlist_info: {
-        extm3u: true,
-        url_tvg: EPG_URL
+        extm3u: true
       },
       channels: {}
     };
