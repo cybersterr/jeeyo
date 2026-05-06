@@ -63,7 +63,7 @@
       "license_type": "clearkey",
       "kid": "ba4d9b38517552de9654d3652d27933b",
       "key": "31e7cbf3d289d3116386457ed8bac3a2",
-      "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Sony_SAB_MOB/WDVLive/index.mpd?__hdnea__=st=1778011236~exp=1778032836~acl=/*~hmac=14292322824878df1bc49f30c000a4ad5b06e4f07280ff7f980ce960aa51065f",
+      "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Sony_SAB_MOB/WDVLive/index.mpd?__hdnea__=st=1778018438~exp=1778040038~acl=/*~hmac=76608f7838eb8463cf26d2dee2c05b5e01ce5ff87219e2686710f3cdf6a27433",
       "user_agent": null
     },
     "155": {
@@ -894,12 +894,12 @@
     "471": {
       "tvg_id": "471",
       "channel_name": "Sony SAB HD",
-      "tvg_logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonySAB.png",
+      "tvg_logo": "https://jiotvimages.cdn.jio.com/dare_images/images/SonySAB.png",
       "group_title": "Entertainment",
       "license_type": "clearkey",
       "kid": "f223cf2122d7510da9fcec6e523ffba1",
       "key": "c55848470f58d3bd934fbfe844522b0e",
-      "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/SonySAB_MOB/WDVLive/index.mpd?__hdnea__=st=1778011236~exp=1778032836~acl=/*~hmac=14292322824878df1bc49f30c000a4ad5b06e4f07280ff7f980ce960aa51065f",
+      "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/SonySAB_MOB/WDVLive/index.mpd?__hdnea__=st=1778018438~exp=1778040038~acl=/*~hmac=76608f7838eb8463cf26d2dee2c05b5e01ce5ff87219e2686710f3cdf6a27433",
       "user_agent": null
     },
     "472": {
