@@ -5222,7 +5222,7 @@
       "license_type": "clearkey",
       "kid": "e705c9330a935a119021d97c7677ce62",
       "key": "dd306a57de1715b0e1256d5c1737f485",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1786764015~exp=1786785615~acl=/bpk-tv/Star_Movies_BTS/WDVLive/*~hmac=c16d7cd2413706a65d985eaa4dce2463f85106c8bb278c51654a4fee72b857ec",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1786785926~exp=1786807526~acl=/bpk-tv/Star_Movies_BTS/WDVLive/*~hmac=2ce98445c254d72996dfea25093af7151a34b031f2a0f79ca90ced303854e818",
       "user_agent": null
     },
     "1117": {
@@ -8192,7 +8192,7 @@
       "license_type": "clearkey",
       "kid": "a3ed8dc0e0cb5d238da80ee0a85bd2e1",
       "key": "67a96992e6406606f3480ab58d7f540c",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/StarSports2Hin_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1786765039~exp=1786786639~acl=/bpk-tv/StarSports2Hin_BTS/WDVLive/*~hmac=005ea2e220266bdbd0cd6a3718aee815094457e20976dae770faae26cacb2a69",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/StarSports2Hin_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1786786675~exp=1786808275~acl=/bpk-tv/StarSports2Hin_BTS/WDVLive/*~hmac=24e85df9c2932ee01023b7c99eb0e80c37d1b539910e021856f3867f99bca022",
       "user_agent": null
     },
     "1999": {
@@ -11184,7 +11184,7 @@
       "license_type": "clearkey",
       "kid": null,
       "key": null,
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_Select_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1786764021~exp=1786785621~acl=/bpk-tv/Star_Movies_Select_BTS/WDVLive/*~hmac=d5b7ff12ead080966faa56471ebe933c58406be9de3efd9910a6887ec2ae2a2b",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_Select_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1786785932~exp=1786807532~acl=/bpk-tv/Star_Movies_Select_BTS/WDVLive/*~hmac=732f605c76a9512c82872e092ca80345c1282d8f02c8bc46c4d428901fdfac3c",
       "user_agent": null
     },
     "3277": {
