@@ -3660,7 +3660,7 @@
       "license_type": "clearkey",
       "kid": "0d533dd92ca057ce85910fbb98be77d5",
       "key": "442690c7c5852ca7c63b63d483ab6bc3",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/SonyBBCEarthHin_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1786791182~exp=1786812782~acl=/bpk-tv/SonyBBCEarthHin_BTS/WDVLive/*~hmac=9c8327ed5671f382985d38ef8ff0e29f94d9ceb9b63370094ed676d98316c15e",
+      "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/SonyBBCEarthHin_MOB/WDVLive/index.mpd|Cookie=__hdnea__=st=1786788037~exp=1786809637~acl=/*~hmac=5837b0d3a87b249b4b11fb240d6dc3a7d669d73a3a28f0397c838b66f6e3fae3",
       "user_agent": null
     },
     "824": {
@@ -6102,7 +6102,7 @@
       "license_type": "clearkey",
       "kid": "c3af1f24c63a5cc2bf71921eed28d1ff",
       "key": "80f4de40d7603bd8e45fe41db53f5198",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/National_Geographic_HD_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1786791618~exp=1786813218~acl=/bpk-tv/National_Geographic_HD_BTS/WDVLive/*~hmac=5fdcc622c9ea80db3cd42acdaa23d9e96933b723926c7f09d6b43eb3ea88d4d6",
+      "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/National_Geographic_HD_MOB/WDVLive/index.mpd|Cookie=__hdnea__=st=1786788037~exp=1786809637~acl=/*~hmac=5837b0d3a87b249b4b11fb240d6dc3a7d669d73a3a28f0397c838b66f6e3fae3",
       "user_agent": null
     },
     "1338": {
