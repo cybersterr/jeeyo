@@ -11,100 +11,129 @@ async function fetchAndSaveJson() {
       throw new Error("STREAM_URL secret not found.");
     }
 
-    const response = await axios.get(STREAM_URL, { responseType: "text" });
-    const lines = response.data.split("\n");
+    const response = await axios.get(STREAM_URL, {
+      responseType: "text"
+    });
 
-    const result = {
-      channels: {}
-    };
+    const lines = response.data.split(/\r?\n/);
+
+    const result = [];
 
     let currentKid = null;
     let currentKey = null;
-    let currentTvgId = null;
-    let currentGroup = null;
+    let currentId = null;
+    let currentCategory = null;
     let currentLogo = null;
-    let currentChannel = null;
-    let currentUserAgent = null;
+    let currentName = null;
+    let currentCookie = null;
 
     for (const line of lines) {
       const trimmed = line.trim();
 
-      // Skip #EXTM3U line
-      if (trimmed.startsWith("#EXTM3U")) {
+      if (!trimmed || trimmed.startsWith("#EXTM3U")) {
         continue;
       }
 
-      // Extract info from #EXTINF
+      // Extract channel information
       if (trimmed.startsWith("#EXTINF:")) {
         const tvgIdMatch = trimmed.match(/tvg-id="([^"]+)"/);
         const groupMatch = trimmed.match(/group-title="([^"]+)"/);
         const logoMatch = trimmed.match(/tvg-logo="([^"]+)"/);
-        const channelMatch = trimmed.match(/,(.*)$/);
+        const nameMatch = trimmed.match(/,(.*)$/);
 
-        currentTvgId = tvgIdMatch ? tvgIdMatch[1] : null;
-        currentGroup = groupMatch ? groupMatch[1] : null;
+        currentId = tvgIdMatch ? tvgIdMatch[1] : null;
+        currentCategory = groupMatch ? groupMatch[1] : null;
         currentLogo = logoMatch ? logoMatch[1] : null;
-        currentChannel = channelMatch ? channelMatch[1].trim() : null;
+        currentName = nameMatch ? nameMatch[1].trim() : null;
       }
 
-      // Extract clearkey
+      // Extract ClearKey
       else if (
         trimmed.startsWith(
           "#KODIPROP:inputstream.adaptive.license_key="
         )
       ) {
-        const value = trimmed.split("=")[1];
+        const value = trimmed.split("=").slice(1).join("=");
 
         if (value.includes(":")) {
           const [kid, key] = value.split(":");
-          currentKid = kid;
-          currentKey = key;
+
+          currentKid = kid.trim();
+          currentKey = key.trim();
         } else {
           currentKid = null;
-          currentKey = value;
+          currentKey = value.trim();
         }
       }
 
-      // Extract user-agent
-      else if (trimmed.startsWith("#EXTVLCOPT:http-user-agent=")) {
-        currentUserAgent = trimmed.split("=")[1];
+      // Extract cookie from #EXTHTTP
+      else if (
+        trimmed.startsWith("#EXTVLCOPT:http-referrer=")
+      ) {
+        // Ignore referrer
       }
 
-      // Extract stream URL
+      // Extract URL and build output
       else if (trimmed.startsWith("http")) {
-        if (currentTvgId === "sf-top") {
+        // Skip sf-top
+        if (currentId === "sf-top") {
           currentKid = null;
           currentKey = null;
-          currentTvgId = null;
-          currentGroup = null;
+          currentId = null;
+          currentCategory = null;
           currentLogo = null;
-          currentChannel = null;
-          currentUserAgent = null;
+          currentName = null;
+          currentCookie = null;
           continue;
         }
 
-        let cleanUrl = trimmed.split("&xxx=")[0];
+        const cleanUrl = trimmed.split("&xxx=")[0];
 
-        result.channels[currentTvgId || currentChannel] = {
-          tvg_id: currentTvgId,
-          channel_name: currentChannel,
-          tvg_logo: currentLogo,
-          group_title: currentGroup,
-          license_type: "clearkey",
-          kid: currentKid,
+        // Extract __hdnea__ cookie from URL
+        try {
+          const parsedUrl = new URL(cleanUrl);
+          currentCookie = parsedUrl.searchParams.get("__hdnea__");
+
+          if (currentCookie) {
+            currentCookie =
+              "__hdnea__=" + currentCookie;
+          }
+        } catch {
+          currentCookie = null;
+        }
+
+        // Extract expiry time from cookie
+        let expireTime = null;
+
+        if (currentCookie) {
+          const expMatch =
+            currentCookie.match(/exp=(\d+)/);
+
+          expireTime = expMatch
+            ? expMatch[1]
+            : null;
+        }
+
+        result.push({
+          name: currentName,
+          id: currentId,
+          category: currentCategory,
+          keyId: currentKid,
           key: currentKey,
+          logo: currentLogo,
           url: cleanUrl,
-          user_agent: currentUserAgent
-        };
+          cookie: currentCookie,
+          expire_time: expireTime
+        });
 
         // Reset values
         currentKid = null;
         currentKey = null;
-        currentTvgId = null;
-        currentGroup = null;
+        currentId = null;
+        currentCategory = null;
         currentLogo = null;
-        currentChannel = null;
-        currentUserAgent = null;
+        currentName = null;
+        currentCookie = null;
       }
     }
 
@@ -114,9 +143,16 @@ async function fetchAndSaveJson() {
       "utf-8"
     );
 
-    console.log("✅ stream.json saved successfully.");
+    console.log(
+      `✅ stream.json saved successfully. ${result.length} channels found.`
+    );
+
   } catch (err) {
-    console.error("❌ Failed to fetch M3U:", err.message);
+    console.error(
+      "❌ Failed to fetch M3U:",
+      err.message
+    );
+
     process.exit(1);
   }
 }
