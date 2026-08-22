@@ -888,7 +888,7 @@
       "license_type": "clearkey",
       "kid": "3698f70a682b503599cbc0fcae1f4df4",
       "key": "91a7ebf70d1fd76f59b9970c9525dad7",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/AndTVHD_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787339115~exp=1787360715~acl=/bpk-tv/AndTVHD_BTS/WDVLive/*~hmac=2bc67a484bef3d3ffef299611e2f839b8509ac905711a168fd0d45dea8ae88a9",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/AndTVHD_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787360733~exp=1787382333~acl=/bpk-tv/AndTVHD_BTS/WDVLive/*~hmac=1a3662b95b17c995cf1391643301cf5f432896625faf8df4e7c9f61dbbb55f15",
       "user_agent": null
     },
     "473": {
@@ -5222,7 +5222,7 @@
       "license_type": "clearkey",
       "kid": "e705c9330a935a119021d97c7677ce62",
       "key": "dd306a57de1715b0e1256d5c1737f485",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787335534~exp=1787357134~acl=/bpk-tv/Star_Movies_BTS/WDVLive/*~hmac=6389157f336e2d8efe2fa698f309ae725842b4ba23563852d18fc582142aee74",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787357438~exp=1787379038~acl=/bpk-tv/Star_Movies_BTS/WDVLive/*~hmac=c4fb55cb17db8ff8b5cde811328554e0d076e11b4a11f214dbb4a62a5e9451f5",
       "user_agent": null
     },
     "1117": {
@@ -7378,7 +7378,7 @@
       "license_type": "clearkey",
       "kid": "bf8c5d68566451d4a7310000acde7523",
       "key": "92ac70b12af7f68fd49a0578e4765ab9",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/AndXploreHD_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787335536~exp=1787357136~acl=/bpk-tv/AndXploreHD_BTS/WDVLive/*~hmac=0ca8305e206ef00867eaee2ee09be7ce81af5ce798fc678037c1519ea7798ca3",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/AndXploreHD_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787357440~exp=1787379040~acl=/bpk-tv/AndXploreHD_BTS/WDVLive/*~hmac=c470e9b5da1697671cbe51c7c2eaa5a3a832ac6ad502a93d43b69d860fe17c48",
       "user_agent": null
     },
     "1669": {
@@ -11184,7 +11184,7 @@
       "license_type": "clearkey",
       "kid": null,
       "key": null,
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_Select_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787335539~exp=1787357139~acl=/bpk-tv/Star_Movies_Select_BTS/WDVLive/*~hmac=3bc95934b601bc3935370ac3451596874869abd748402f45c5978cd9f6985857",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_Select_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787357442~exp=1787379042~acl=/bpk-tv/Star_Movies_Select_BTS/WDVLive/*~hmac=674a46935dd35fa6ff8f9bd5fd38a7a358cb4f05dcb023b399b82c5c3237d561",
       "user_agent": null
     },
     "3277": {
