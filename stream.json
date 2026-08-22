@@ -85,7 +85,7 @@
       "license_type": "clearkey",
       "kid": "157cd1bd71a256fe8ab763ba280320e5",
       "key": "6befde8b90b6926423cc83775b8dcb59",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Travel_XP_HD_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787399290~exp=1787402890~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=f4eacc31e27d4534a0a28b259ff654c8df56968ba5d7d640ec783386c87ca716",
+      "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Travel_XP_HD_MOB/WDVLive/index.mpd|Cookie=__hdnea__=st=1787410065~exp=1787431665~acl=/*~hmac=ef43586b78eeba9fa56cb7484c859a0d34f1b66fb37bdc2f1d11d5ba7444a4b4",
       "user_agent": null
     },
     "165": {
@@ -9963,7 +9963,7 @@
       "license_type": "clearkey",
       "kid": "69d36c78eb11569493ce7ac00d9d6e87",
       "key": "5121c719b63f0442e423db860b8c517f",
-      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787394319~exp=1787415919~acl=/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/*~hmac=719fd8bb36c26da40d423772e59d24b2287991631657a8b662c6b057e73f683a",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/index.mpd|Cookie=__hdnea__=st=1787415935~exp=1787437535~acl=/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/*~hmac=c8feeab2113e79034e72fd76c063cee8796c0292283f75add420e7c0d2d30aaa",
       "user_agent": null
     },
     "3097": {
