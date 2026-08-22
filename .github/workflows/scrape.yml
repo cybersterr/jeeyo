@@ -11,28 +11,28 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
           ref: main
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: "npm"
+          cache-dependency-path: scraper/package-lock.json
 
       - name: Install dependencies
-        run: |
-          cd scraper
-          npm install
+        working-directory: scraper
+        run: npm install
 
       - name: Run fetch script
+        working-directory: scraper
         env:
           STREAM_URL: ${{ secrets.STREAM_URL }}
-        run: |
-          cd scraper
-          npm start
+        run: npm start
 
       - name: Commit and push stream.json
         env:
@@ -41,14 +41,14 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-          git pull --rebase origin main
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
 
           cp scraper/stream.json stream.json
+
           git add stream.json
 
-          if ! git diff-index --quiet HEAD; then
-            git commit -m "📥 Updated stream.json from remote JSON"
+          if ! git diff --cached --quiet; then
+            git commit -m "📥 Update stream.json"
             git push origin main
           else
             echo "No changes to push."
