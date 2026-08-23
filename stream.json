@@ -72,9 +72,9 @@
     "keyId": "157cd1bd71a256fe8ab763ba280320e5",
     "key": "6befde8b90b6926423cc83775b8dcb59",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP_HD.png",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Travel_XP_HD_MOB/WDVLive/index.mpd",
-    "cookie": null,
-    "expire_time": null
+    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Travel_XP_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787471541~exp=1787475141~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=9e138bc51da281d2c1983aa69330735dfea81749325bc1b8181dc907f1565b54",
+    "cookie": "__hdnea__=st=1787471541~exp=1787475141~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=9e138bc51da281d2c1983aa69330735dfea81749325bc1b8181dc907f1565b54",
+    "expire_time": "1787475141"
   },
   {
     "name": "Zee Cinema HD",
@@ -10005,9 +10005,9 @@
     "keyId": "69d36c78eb11569493ce7ac00d9d6e87",
     "key": "5121c719b63f0442e423db860b8c517f",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Gold_2_HD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787459707~exp=1787481307~acl=/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/*~hmac=66beeae9ce0161a581fa7e2d0f5e7d48fbd44a77b54f2439ffd3dc2522fe25c7",
-    "cookie": "__hdnea__=st=1787459707~exp=1787481307~acl=/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/*~hmac=66beeae9ce0161a581fa7e2d0f5e7d48fbd44a77b54f2439ffd3dc2522fe25c7",
-    "expire_time": "1787481307"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Gold_2_HD_MOB/WDVLive/index.mpd",
+    "cookie": null,
+    "expire_time": null
   },
   {
     "name": "Star Gold Romance",
