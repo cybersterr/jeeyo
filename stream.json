@@ -5968,9 +5968,9 @@
     "keyId": "c3af1f24c63a5cc2bf71921eed28d1ff",
     "key": "80f4de40d7603bd8e45fe41db53f5198",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/National_Geographic_HD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/National_Geographic_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787574926~exp=1787596526~acl=/bpk-tv/National_Geographic_HD_BTS/WDVLive/*~hmac=c8abab52a7e5146c9f88ed19b6e942d30e1e6ca44187891afdaf911bd93f5d90",
-    "cookie": "__hdnea__=st=1787574926~exp=1787596526~acl=/bpk-tv/National_Geographic_HD_BTS/WDVLive/*~hmac=c8abab52a7e5146c9f88ed19b6e942d30e1e6ca44187891afdaf911bd93f5d90",
-    "expire_time": "1787596526"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/National_Geographic_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "RT India",
@@ -7211,9 +7211,9 @@
     "keyId": "bf8c5d68566451d4a7310000acde7523",
     "key": "92ac70b12af7f68fd49a0578e4765ab9",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/AndXploreHD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/AndXploreHD_BTS/WDVLive/index.mpd?__hdnea__=st=1787575514~exp=1787597114~acl=/bpk-tv/AndXploreHD_BTS/WDVLive/*~hmac=aa1be899377966b401f4ea9686f63c97d39af107e6957c71f537e4831695f1b8",
-    "cookie": "__hdnea__=st=1787575514~exp=1787597114~acl=/bpk-tv/AndXploreHD_BTS/WDVLive/*~hmac=aa1be899377966b401f4ea9686f63c97d39af107e6957c71f537e4831695f1b8",
-    "expire_time": "1787597114"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/AndXploreHD_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "Sun Bangla",
