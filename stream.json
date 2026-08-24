@@ -72,9 +72,9 @@
     "keyId": "157cd1bd71a256fe8ab763ba280320e5",
     "key": "6befde8b90b6926423cc83775b8dcb59",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP_HD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Travel_XP_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787579947~exp=1787583547~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=0dbb2643d95470b8d0c41d6dcf40491605226881860aed26df43a011abbab398",
-    "cookie": "__hdnea__=st=1787579947~exp=1787583547~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=0dbb2643d95470b8d0c41d6dcf40491605226881860aed26df43a011abbab398",
-    "expire_time": "1787583547"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Travel_XP_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "Zee Cinema HD",
@@ -3625,9 +3625,9 @@
     "keyId": "0d533dd92ca057ce85910fbb98be77d5",
     "key": "442690c7c5852ca7c63b63d483ab6bc3",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyBBCEarthHin.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/SonyBBCEarthHin_BTS/WDVLive/index.mpd?__hdnea__=st=1787568687~exp=1787590287~acl=/bpk-tv/SonyBBCEarthHin_BTS/WDVLive/*~hmac=44d8b554417c3e70b37b4247639eb37f24a568d2a3d923b84a8bd330d6332dfa",
-    "cookie": "__hdnea__=st=1787568687~exp=1787590287~acl=/bpk-tv/SonyBBCEarthHin_BTS/WDVLive/*~hmac=44d8b554417c3e70b37b4247639eb37f24a568d2a3d923b84a8bd330d6332dfa",
-    "expire_time": "1787590287"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/SonyBBCEarthHin_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "Puthu Yugam",
