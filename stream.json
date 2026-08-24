@@ -28,9 +28,9 @@
     "keyId": "e5105a616fb95ce48dbde4fe9d7960ad",
     "key": "272d2bcff8430174fdd5aaf6f93abb6b",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/History_HD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/History_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787526418~exp=1787548018~acl=/bpk-tv/History_HD_BTS/WDVLive/*~hmac=6049fa145afcf9a666a2ae7020d5c10f1bdddcbaf55adb50ec36cb05fd6a1647",
-    "cookie": "__hdnea__=st=1787526418~exp=1787548018~acl=/bpk-tv/History_HD_BTS/WDVLive/*~hmac=6049fa145afcf9a666a2ae7020d5c10f1bdddcbaf55adb50ec36cb05fd6a1647",
-    "expire_time": "1787548018"
+    "url": "https://game.denver69.fun/Jtv/j2Jc4z/Jtv.mpd?id=146",
+    "cookie": "id=146",
+    "expire_time": null
   },
   {
     "name": "Movies Now HD",
@@ -72,9 +72,9 @@
     "keyId": "157cd1bd71a256fe8ab763ba280320e5",
     "key": "6befde8b90b6926423cc83775b8dcb59",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP_HD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Travel_XP_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787525892~exp=1787529492~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=005a51722062e2e7d1841baac70bd42f09918f649d7ccf39b9d77ab6bc8dfa03",
-    "cookie": "__hdnea__=st=1787525892~exp=1787529492~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=005a51722062e2e7d1841baac70bd42f09918f649d7ccf39b9d77ab6bc8dfa03",
-    "expire_time": "1787529492"
+    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Travel_XP_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787543905~exp=1787547505~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=6874ad49e3c38f12cc6270430cbc6e983fdc8233e1e246f23a094166caf3d3e7",
+    "cookie": "__hdnea__=st=1787543905~exp=1787547505~acl=/bpk-tv/Travel_XP_HD_BTS/WDVLive/*~hmac=6874ad49e3c38f12cc6270430cbc6e983fdc8233e1e246f23a094166caf3d3e7",
+    "expire_time": "1787547505"
   },
   {
     "name": "Zee Cinema HD",
