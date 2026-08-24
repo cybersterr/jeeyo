@@ -28,9 +28,9 @@
     "keyId": "e5105a616fb95ce48dbde4fe9d7960ad",
     "key": "272d2bcff8430174fdd5aaf6f93abb6b",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/History_HD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/History_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787570118~exp=1787591718~acl=/bpk-tv/History_HD_BTS/WDVLive/*~hmac=610853954815e76f99e55ec448ec4f9aca1fb6c8fbc9c69074d3923f172f7382",
-    "cookie": "__hdnea__=st=1787570118~exp=1787591718~acl=/bpk-tv/History_HD_BTS/WDVLive/*~hmac=610853954815e76f99e55ec448ec4f9aca1fb6c8fbc9c69074d3923f172f7382",
-    "expire_time": "1787591718"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/History_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "Movies Now HD",
@@ -105,9 +105,9 @@
     "keyId": "6a472713dd855718b1dc24986efbc752",
     "key": "4215cd7cf5915d1c4f704137ad211f45",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeTVHD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/ZeeTVHD_BTS/WDVLive/index.mpd?__hdnea__=st=1787569314~exp=1787590914~acl=/bpk-tv/ZeeTVHD_BTS/WDVLive/*~hmac=752abbf8de349d5a73676ed330b6a3612894e770dfc984734799a9ef425d814f",
-    "cookie": "__hdnea__=st=1787569314~exp=1787590914~acl=/bpk-tv/ZeeTVHD_BTS/WDVLive/*~hmac=752abbf8de349d5a73676ed330b6a3612894e770dfc984734799a9ef425d814f",
-    "expire_time": "1787590914"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/ZeeTVHD_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "Aaj Tak",
@@ -644,9 +644,9 @@
     "keyId": "d5f46c3bb170561ab93db79c032825b5",
     "key": "a834101c520ab2af65add91e5e9a2b61",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeAnmolCinema.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/ZeeAnmolCinema_BTS/WDVLive/index.mpd?__hdnea__=st=1787569908~exp=1787591508~acl=/bpk-tv/ZeeAnmolCinema_BTS/WDVLive/*~hmac=0449f47087416b8d2ab3946b12ca16f880cadc8150022ed83abbb9d331a34869",
-    "cookie": "__hdnea__=st=1787569908~exp=1787591508~acl=/bpk-tv/ZeeAnmolCinema_BTS/WDVLive/*~hmac=0449f47087416b8d2ab3946b12ca16f880cadc8150022ed83abbb9d331a34869",
-    "expire_time": "1787591508"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/ZeeAnmolCinema_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "J Movies",
@@ -1535,9 +1535,9 @@
     "keyId": "ad093fffe09f50cdbc1afdea17c551e3",
     "key": "939685a7d928a4e9444ec4c47309703c",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Travel_XP_BTS/WDVLive/index.mpd?__hdnea__=st=1787569914~exp=1787591514~acl=/bpk-tv/Travel_XP_BTS/WDVLive/*~hmac=715e41679876895960b4ae6ffe3cde6b4baeed0a5ba552fbcb95224c60b58fb3",
-    "cookie": "__hdnea__=st=1787569914~exp=1787591514~acl=/bpk-tv/Travel_XP_BTS/WDVLive/*~hmac=715e41679876895960b4ae6ffe3cde6b4baeed0a5ba552fbcb95224c60b58fb3",
-    "expire_time": "1787591514"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Travel_XP_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "Kaumudy TV",
@@ -5957,9 +5957,9 @@
     "keyId": "999ce48f3e4d5de8b72c34f213176d9e",
     "key": "13e3ca891d32d158d8108007fef88388",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Nat_Geo_Wild_HD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Nat_Geo_Wild_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787569535~exp=1787591135~acl=/bpk-tv/Nat_Geo_Wild_HD_BTS/WDVLive/*~hmac=ad6b207e120ec27d9ee94db522a0a67a05cb55c1ffb8225fb0f2c6fa7a2ab039",
-    "cookie": "__hdnea__=st=1787569535~exp=1787591135~acl=/bpk-tv/Nat_Geo_Wild_HD_BTS/WDVLive/*~hmac=ad6b207e120ec27d9ee94db522a0a67a05cb55c1ffb8225fb0f2c6fa7a2ab039",
-    "expire_time": "1787591135"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Nat_Geo_Wild_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "National Geographic HD",
@@ -10005,9 +10005,9 @@
     "keyId": "69d36c78eb11569493ce7ac00d9d6e87",
     "key": "5121c719b63f0442e423db860b8c517f",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Gold_2_HD.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/index.mpd?__hdnea__=st=1787569219~exp=1787590819~acl=/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/*~hmac=4a7da52042c26e216ace0d61649eb50e35b485e11daec7fdf8342c5a6e71f91d",
-    "cookie": "__hdnea__=st=1787569219~exp=1787590819~acl=/bpk-tv/Star_Gold_2_HD_BTS/WDVLive/*~hmac=4a7da52042c26e216ace0d61649eb50e35b485e11daec7fdf8342c5a6e71f91d",
-    "expire_time": "1787590819"
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Gold_2_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "cookie": "__hdnea__=st=1787583610~exp=1787605210~acl=/*~hmac=ae7438eb7163b757fef1f5fb55351e307ddb4db0fbae8873a7d8f834bfe11f38",
+    "expire_time": "1787605210"
   },
   {
     "name": "Star Gold Romance",
