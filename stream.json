@@ -11204,9 +11204,9 @@
     "keyId": "null",
     "key": "null",
     "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Movies_Select.png",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_Select_BTS/WDVLive/index.mpd?__hdnea__=st=1787583623~exp=1787605223~acl=/bpk-tv/Star_Movies_Select_BTS/WDVLive/*~hmac=1cebd0baa938f68599b297767a7e2e0e93a5e00393676a90754fee41e3e6150e",
-    "cookie": "__hdnea__=st=1787583623~exp=1787605223~acl=/bpk-tv/Star_Movies_Select_BTS/WDVLive/*~hmac=1cebd0baa938f68599b297767a7e2e0e93a5e00393676a90754fee41e3e6150e",
-    "expire_time": "1787605223"
+    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Movies_Select_BTS/WDVLive/index.mpd?__hdnea__=st=1787605548~exp=1787627148~acl=/bpk-tv/Star_Movies_Select_BTS/WDVLive/*~hmac=7149568dfdfcbc49d7cff77e4a162495cf73e2087a33312907585f5a7c8f4078",
+    "cookie": "__hdnea__=st=1787605548~exp=1787627148~acl=/bpk-tv/Star_Movies_Select_BTS/WDVLive/*~hmac=7149568dfdfcbc49d7cff77e4a162495cf73e2087a33312907585f5a7c8f4078",
+    "expire_time": "1787627148"
   },
   {
     "name": "OM TV",
