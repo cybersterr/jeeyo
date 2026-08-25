@@ -8047,9 +8047,9 @@
     "keyId": "ec7d009d07aa5cbc81a441880530dfa5",
     "key": "8147983ad7402ebfc222d28b667a196f",
     "logo": "https://img.media.jio.com/tvpimages/98/48/301989_1749664475828_l_medium.jpg",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_Select_2_BTS/WDVLive/index.mpd?__hdnea__=st=1787601630~exp=1787623230~acl=/bpk-tv/Star_Sports_Select_2_BTS/WDVLive/*~hmac=bdacf15f8f4597b532988959035e80468ce6e8f9da815568ea7505888cf63f2a",
-    "cookie": "__hdnea__=st=1787601630~exp=1787623230~acl=/bpk-tv/Star_Sports_Select_2_BTS/WDVLive/*~hmac=bdacf15f8f4597b532988959035e80468ce6e8f9da815568ea7505888cf63f2a",
-    "expire_time": "1787623230"
+    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_Select_2_BTS/WDVLive/index.mpd?__hdnea__=st=1787623239~exp=1787644839~acl=/bpk-tv/Star_Sports_Select_2_BTS/WDVLive/*~hmac=d9577235621a90f2ab79c4f7c4e9cef387a58a61e42a3d94ff042c6375f3c8c3",
+    "cookie": "__hdnea__=st=1787623239~exp=1787644839~acl=/bpk-tv/Star_Sports_Select_2_BTS/WDVLive/*~hmac=d9577235621a90f2ab79c4f7c4e9cef387a58a61e42a3d94ff042c6375f3c8c3",
+    "expire_time": "1787644839"
   },
   {
     "name": "Star Sports 1 HD",
@@ -8168,9 +8168,9 @@
     "keyId": "d0d750ebd52b5756aa7fb833f61ceece",
     "key": "4ae62a20c030c918aad24193c1dda229",
     "logo": "https://img.media.jio.com/tvpimages/69/73/301995_1749664384503_l_medium.jpg",
-    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_1_Tamil_BTS/WDVLive/index.mpd?__hdnea__=st=1787601496~exp=1787623096~acl=/bpk-tv/Star_Sports_1_Tamil_BTS/WDVLive/*~hmac=2381e6fe0671642bb667bfe73d21b2cbfc01a351f2addadedba98ed9faafabae",
-    "cookie": "__hdnea__=st=1787601496~exp=1787623096~acl=/bpk-tv/Star_Sports_1_Tamil_BTS/WDVLive/*~hmac=2381e6fe0671642bb667bfe73d21b2cbfc01a351f2addadedba98ed9faafabae",
-    "expire_time": "1787623096"
+    "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_1_Tamil_BTS/WDVLive/index.mpd?__hdnea__=st=1787623113~exp=1787644713~acl=/bpk-tv/Star_Sports_1_Tamil_BTS/WDVLive/*~hmac=9c4a342b9c3d9aa83e1fef7c5b699a282a0fd7459f6890a6ac6d3e7597545c85",
+    "cookie": "__hdnea__=st=1787623113~exp=1787644713~acl=/bpk-tv/Star_Sports_1_Tamil_BTS/WDVLive/*~hmac=9c4a342b9c3d9aa83e1fef7c5b699a282a0fd7459f6890a6ac6d3e7597545c85",
+    "expire_time": "1787644713"
   },
   {
     "name": "Star Sports 1 Telugu HD",
