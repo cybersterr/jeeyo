@@ -1,0 +1,170 @@
+
+name: M3U to JSON Converter
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/convert.yml"
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch M3U and convert to JSON
+        env:
+          M3U_SOURCE_URL: ${{ secrets.M3U_SOURCE_URL }}
+        shell: python
+        run: |
+          import os
+          import json
+          import re
+          import urllib.request
+          from urllib.parse import unquote
+
+          source_url = os.environ.get("M3U_SOURCE_URL", "").strip()
+
+          if not source_url:
+              raise ValueError(
+                  "M3U_SOURCE_URL secret is missing or empty."
+              )
+
+          if not source_url.startswith(("https://", "http://")):
+              raise ValueError("M3U_SOURCE_URL must be an HTTP(S) URL.")
+
+          request = urllib.request.Request(
+              source_url,
+              headers={"User-Agent": "Mozilla/5.0"}
+          )
+
+          with urllib.request.urlopen(request, timeout=60) as response:
+              text = response.read().decode("utf-8-sig")
+
+          channels = []
+          current = None
+
+          def attrs(line):
+              return dict(re.findall(r'([\w-]+)="([^"]*)"', line))
+
+          for raw in text.splitlines():
+              line = raw.strip()
+              if not line:
+                  continue
+
+              if line.startswith("#EXTINF:"):
+                  title = line.split(",", 1)[1].strip() if "," in line else ""
+                  a = attrs(line)
+                  current = {
+                      "id": a.get("tvg-id", ""),
+                      "name": a.get("tvg-name", "") or title,
+                      "logo": a.get("tvg-logo", ""),
+                      "category": a.get("group-title", ""),
+                      "all_keys": "",
+                      "headers": {}
+                  }
+
+              elif current is not None and line.startswith(
+                  "#KODIPROP:inputstream.adaptive.license_key="
+              ):
+                  value = line.split("=", 1)[1].strip()
+                  try:
+                      obj = json.loads(value)
+                      if isinstance(obj, dict) and "keys" in obj:
+                          value = ",".join(
+                              f'{k["kid"]}:{k["k"]}'
+                              for k in obj["keys"]
+                          )
+                  except (json.JSONDecodeError, TypeError, KeyError):
+                      pass
+                  current["all_keys"] = value
+
+              elif current is not None and line.startswith("#EXTVLCOPT:"):
+                  item = line[len("#EXTVLCOPT:"):]
+                  if "=" in item:
+                      key, val = item.split("=", 1)
+                      key = key.strip().lower()
+                      mapping = {
+                          "http-user-agent": "User-Agent",
+                          "http-referrer": "Referer",
+                          "http-origin": "Origin",
+                          "http-cookie": "Cookie"
+                      }
+                      if key in mapping:
+                          current["headers"][mapping[key]] = val.strip()
+                      elif key == "http-extra-headers":
+                          for h in val.split("&"):
+                              if ":" in h:
+                                  name, value = h.split(":", 1)
+                                  current["headers"][name.strip()] = value.strip()
+
+              elif current is not None and line.startswith("#EXTHTTP:"):
+                  try:
+                      h = json.loads(line[len("#EXTHTTP:"):])
+                      if isinstance(h, dict):
+                          current["headers"].update(h)
+                  except json.JSONDecodeError:
+                      pass
+
+              elif current is not None and not line.startswith("#"):
+                  parts = line.split("|", 1)
+                  url = parts[0].strip()
+                  options = {}
+
+                  if len(parts) > 1:
+                      for item in parts[1].split("&"):
+                          if "=" in item:
+                              k, v = item.split("=", 1)
+                              options[k.strip().lower()] = unquote(v)
+
+                  for k, h in {
+                      "cookie": "Cookie",
+                      "referer": "Referer",
+                      "origin": "Origin",
+                      "user-agent": "User-Agent"
+                  }.items():
+                      if options.get(k):
+                          current["headers"].setdefault(h, options[k])
+
+                  channels.append({
+                      "id": current["id"] or str(len(channels) + 1),
+                      "url": url,
+                      "logo": current["logo"],
+                      "name": current["name"],
+                      "category": current["category"],
+                      "all_keys": current["all_keys"],
+                      **({"headers": current["headers"]}
+                         if current["headers"] else {})
+                  })
+                  current = None
+
+          if not channels:
+              raise ValueError(
+                  "No channels were parsed. Check the source URL and playlist format."
+              )
+
+          with open("channels.json", "w", encoding="utf-8") as f:
+              json.dump(channels, f, indent=4, ensure_ascii=False)
+              f.write("\n")
+
+          print(f"Converted {len(channels)} channels to channels.json")
+
+      - name: Commit JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add channels.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update channels.json"
+            git push
+          else
+            echo "No changes to commit"
+          fi
